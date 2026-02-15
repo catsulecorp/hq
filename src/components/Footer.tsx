@@ -19,15 +19,15 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-[#121826] text-white/60 pt-24 pb-12 border-t border-white/5 overflow-hidden">
+    <footer className="relative bg-[#121826] text-white/60 pt-12 md:pt-24 pb-8 md:pb-12 border-t border-white/5 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="container relative z-10 mx-auto pl-24 pr-12">
-        <div className="grid grid-cols-2 md:grid-cols-12 gap-y-16 gap-x-8 mb-20">
+      <div className="container relative z-10 mx-auto px-6 md:pl-24 md:pr-12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-y-16 gap-x-8 mb-12 md:mb-20">
           {/* Brand & Mission */}
-          <div className="col-span-2 md:col-span-5 space-y-8">
+          <div className="col-span-1 md:col-span-5 space-y-8">
             <a href="#home" onClick={scrollToTop} className="inline-block group">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-2xl group-hover:scale-105 transition-transform duration-500">

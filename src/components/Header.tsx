@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#121826]/90 backdrop-blur-md border-b border-white/5 shadow-2xl">
-      <div className="container mx-auto pl-24 pr-24 py-4 flex items-center justify-between">
+      <div className="container mx-auto px-6 md:px-24 py-4 flex items-center justify-between">
         <a
           href="#home"
           onClick={(e) => scrollToSection(e, 'home')}
@@ -44,7 +44,7 @@ const Header = () => {
           </div>
           <div>
             <span className="text-xl font-bold text-white group-hover:text-primary transition-colors block leading-tight">Catsule Corp</span>
-            <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary/60">{t.header.tagline}</p>
+            <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-primary/60 hidden md:block">{t.header.tagline}</p>
           </div>
         </a>
 
